@@ -26,10 +26,11 @@ As can be seen from the screenshot, available operations are:
 * RETR: Fetches the selected file on the remote listing.
 * STOR: Pushes selected local file from tree onto the current remote directory.
 * RN: Renames selected file on the remote listing. A little line edit and button controls appear when you click this, so that you can enter the new name.
-![Renaming](ss/rename.png?raw=true)
 * DELE: Deletes selected file on the remote listing.
 * RMD: Removes selected directory on the remote listing.
 * MKD: Makes a directory on the current remote path by the name input in the same little line edit.
+
+![Renaming](ss/rename.png?raw=true)
 
 You can enter the selected directory either on the tree or the list by clicking the `->` button. Likewise, you can go up one directory by clicking `^` button.
 
@@ -38,7 +39,7 @@ classes from `ui` files and using the generated code afterwards.
 
 #### Dependencies
 
-In order GUI to work --it doesn't work without GUI by the way ^^;--, you need Qt python binding PyQt5. On Arch Linux, you can get it from the main repo:
+In order GUI to work -- app doesn't work without GUI by the way ^^; --, you need Qt python binding PyQt5. On Arch Linux, you can get it from the main repo:
 
 ```
 $ pacman -S python-pyqt5
@@ -51,7 +52,7 @@ install it via pacman:
 $ pacman -S vsftpd
 ```
     
-If you are encountering permission issues, consider changing default settings of vsftpd by editing /etc/vsftpd.conf. By default, you can connect to the server anonymously.
-If you want to connect as a local user as well, you should enable it by adding `local\_enable=YES` to the configuration file mentioned above. Additionally you should add the
-`write\_enable=YES` line to execute any write operation.
+If you are encountering permission issues, consider changing default settings of vsftpd by editing `/etc/vsftpd.conf`. By default, you can connect to the server anonymously.
+If you want to connect as a local user as well, you should enable it by adding `local_enable=YES` to the configuration file mentioned above. Additionally you should add the
+`write_enable=YES` line to execute any write operation.
 
