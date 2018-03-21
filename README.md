@@ -26,7 +26,7 @@ As can be seen from the screenshot, available operations are:
 * RETR: Fetches the selected file on the remote listing.
 * STOR: Pushes selected local file from tree onto the current remote directory.
 * RN: Renames selected file on the remote listing. A little line edit and button controls appear when you click this, so that you can enter the new name.
-![Renaming]((ss/rename.png?raw=true)
+![Renaming](ss/rename.png?raw=true)
 * DELE: Deletes selected file on the remote listing.
 * RMD: Removes selected directory on the remote listing.
 * MKD: Makes a directory on the current remote path by the name input in the same little line edit.
